@@ -12,6 +12,7 @@ server.get("/", (req, res) => {
 
 // the port is coming from the environment
 const port = process.env.PORT || 3001;
+// port will be set by Heroku on deploy
 server.listen(port, () => {
   console.log(`\nServer running on ${port} \n`);
 });
