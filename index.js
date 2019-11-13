@@ -10,6 +10,10 @@ server.get("/", (req, res) => {
   console.log("in slash");
 });
 
+server.get("/goodbye", (req, res) => {
+  res.status(200).json({ goodbye: "goodbye" });
+});
+
 // the port is coming from the environment
 const port = process.env.PORT || 3001;
 // port will be set by Heroku on deploy
