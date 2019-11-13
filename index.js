@@ -9,7 +9,7 @@ const server = express(); // create an instance of an express server
 server.use(express.json());
 
 server.get("/", (req, res) => {
-  res.status(200).json({ hello: "hello" });
+  res.status(200).json({ message: process.env.MSG });
   console.log("in slash");
 });
 
