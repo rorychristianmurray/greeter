@@ -1,4 +1,7 @@
+require("dotenv").config();
+
 const express = require("express"); // import library
+console.log("message", process.env.MSG);
 
 const server = express(); // create an instance of an express server
 // its a function that gives you back an object (a constructor function)
