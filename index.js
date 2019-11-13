@@ -10,7 +10,8 @@ server.get("/", (req, res) => {
   console.log("in slash");
 });
 
-const port = 3001;
+// the port is coming from the environment
+const port = process.env.PORT || 3001;
 server.listen(port, () => {
   console.log(`\nServer running on ${port} \n`);
 });
